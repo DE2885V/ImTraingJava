@@ -10,16 +10,14 @@ public class SomeThread extends Thread {
     }
 
     public void run(){
-        while (count < 100){
-            try{
-                System.out.println(name + ": " + count);
+        while (count < 100) {
+            try {
+                System.out.println(name + ": " + count);    
                 count++;
                 Thread.sleep(250);
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Some error...");
             }
-
         }
     }
 }
